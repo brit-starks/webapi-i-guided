@@ -26,8 +26,14 @@ server.listen(
 
 //  Request Handler
 
-server.get();
+server.get('/', (req, res) => {   
+  res.send('Hello world')
+});
 
+// Here what we're saying is  when someone requests a GET, we are going to send back (res) "Hello World" 
+
+//  Req - Anything that has to do with data coming to us  INCOMING
+//  Res - Anything that has to do with what we're sending back  OUTGOING
 
 
 
